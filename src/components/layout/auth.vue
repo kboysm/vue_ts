@@ -2,7 +2,7 @@
     <v-app>
         <v-main>
             <v-container class="justify-center align-center">
-                <v-text-field></v-text-field>
+                <v-btn @click="test">test</v-btn>
             </v-container>
         </v-main>
     </v-app>
@@ -13,7 +13,12 @@
 
     @Component
     export default class LayoutAuth extends Vue {
-        
+        async test () {
+            const ref = this.$firebase.firestore().collection('test').doc('lsm')
+            await ref.set({ lim : 'sm'})
+            const doc = await ref.get()
+            console.log(doc.data())
+        }
     }
 </script>
 
