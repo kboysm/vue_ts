@@ -2,7 +2,7 @@ import { auth } from "@/plugins/firebase"
 
 export default class AuthHandler {
 
-    private static inst: AuthHandler
+    private static inst : AuthHandler
 
     constructor () {
         this.run()

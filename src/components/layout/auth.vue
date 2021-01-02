@@ -2,7 +2,8 @@
     <v-app>
         <v-main>
             <v-container class="justify-center align-center fill-height">
-                <auth-sign></auth-sign>
+                <!-- <auth-sign></auth-sign> -->
+                <fire-test></fire-test>
             </v-container>
         </v-main>
     </v-app>
@@ -11,11 +12,11 @@
 <script lang="ts">
     import { Component, Vue } from 'vue-property-decorator';
     import  AuthSign from "@/components/auth/sign.vue"
-
+    import fireTest from "@/components/test/model.vue"
 
     @Component({
         components:{
-            AuthSign
+            AuthSign,fireTest
         }
     })
     export default class LayoutAuth extends Vue {
