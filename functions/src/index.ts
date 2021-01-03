@@ -1,9 +1,14 @@
-import * as functions from 'firebase-functions';
+import userCollection, { User } from './models/users'
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-// export const helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+
+const test = async () => {
+    const ref = userCollection.doc( 'lim' )
+    const user = new User('functions test')
+    await ref.set( user )
+    const doc = await ref.get()
+    console.log( doc.data() )
+}
+
+test()
+
+console.log('functions start')

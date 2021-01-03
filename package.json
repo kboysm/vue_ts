@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "emul": "firebase emulators:start --import=./firebase-emul-data --export-on-exit"
+    "emul": "firebase emulators:start --import=./firebase-emul-data --export-on-exit",
+    "ft" : "cd functions && yarn tsc"
   },
   "dependencies": {
     "core-js": "^3.6.5",
