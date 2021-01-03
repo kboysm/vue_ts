@@ -1,8 +1,8 @@
 # vue_ts
 
-## Project setup
+## emulators
 ```
-yarn install
+yarn emul
 ```
 
 ### Compiles and hot-reloads for development
@@ -17,3 +17,5 @@ yarn build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+##vue , typescript , firebase
